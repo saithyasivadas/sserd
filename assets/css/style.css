@@ -29,10 +29,14 @@ body {
   font-size: 14px;
   line-height: 1.6em;
   color: #666;
-  background-color: #ffffff;
+  background: #ffffff;
+   
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
+
 	font-family: 'Roboto Condensed', sans-serif;
 	line-height:1.1em;
 	color: #3a3a3a;
@@ -167,9 +171,6 @@ section.dark .heading h3{
 	display:inline;
 
 
-}
-.clearfix {
-    overflow: auto;
 }
 
 /* sub heading */
@@ -319,13 +320,11 @@ nav select {
 
 
 section#intro {
-	background: #000 url(../img/bg/bg-1.jpg)  no-repeat;
-	background-position:center;
-	width:auto;
+	background-image:url(../img/bg/bg.jpg);
+	position:relative;
+	width:100%;
 	height:auto;
-	margin:0
-	;
-	background-size: cover;
+	
 }
 
 @media (min-width: 1024px) {
@@ -356,6 +355,7 @@ section#intro i  {
 }
 
 section#intro h1  {
+	 display: inline-block;
 	color:#fff;
 	font-size:64px;
 	font-weight:700;
@@ -396,14 +396,9 @@ section#intro p  {
 3. Section: About
 ======================================== */
 .roles {
-	text-align:justify;
-text-justify:inter-word;
+	text-align:center;
 }
 
-.justify {
-    text-align:justify;
-    text-justify:inter-word;
-}
 ul.social-profile {
 	list-style:none;
 	margin-left:0;
@@ -439,6 +434,15 @@ ul.social-profile li a:hover {
 
 
 .box .halftop {
+
+	text-align:center;
+	border-bottom:1px dotted #e9e9e9;
+	padding-bottom:10px;
+	margin-bottom:20px;
+}
+
+.box .halfbottom {
+	
 	text-align:center;
 	border-bottom:1px dotted #e9e9e9;
 	padding-bottom:10px;
@@ -750,7 +754,7 @@ ul.the-icons {
 
 /* ================= services ============================ */
 section#services {
-	background: url(../img/bg/bg-1.jpg) 50% 0 no-repeat;
+	background: url(../img/bg/bg-5.jpg) 50% 0 no-repeat;
 	width:100%;
 	height:auto;
 	margin:0;
@@ -1213,8 +1217,7 @@ img.pull-left{
 
 @media (min-width: 768px) and (max-width: 979px) {
 	.navbar-inner {
-		width:;
-		height: auto;
+		width:100%;
 	}
 	#topnav .navbar-inner .container .logo {
     padding-left: 20px;
